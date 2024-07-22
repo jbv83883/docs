@@ -1,37 +1,34 @@
----
-title: 'Code Blocks'
-description: 'Display inline code and code blocks'
-icon: 'code'
----
+# Repair Error Code WAB-ERR-001
 
-## Basic
+To resolve the error code WAB-ERR-001, follow these steps:
 
-### Inline Code
+## Step 1: Disable Antivirus
+🛡️ **Disable Antivirus**
+Before proceeding with the repair, ensure that your antivirus software is temporarily disabled. This is to prevent it from interfering with the repair process.
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+## Step 2: Repair Windows
 
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
+1. **Open Command Prompt as Administrator**
+    - Press `Win + X` to open the Power User menu.
+    - Select `Command Prompt (Admin)` or `Windows PowerShell (Admin)`.
 
-### Code Block
+2. **Run the Following Commands**
+    - Copy and paste each command below into the Command Prompt window, one at a time. Wait for each command to complete before proceeding to the next.
 
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+    ```sh
+    sfc /scannow
+    ```
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+    ```sh
+    Dism /Online /Cleanup-Image /CheckHealth
+    ```
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+    ```sh
+    Dism /Online /Cleanup-Image /ScanHealth
+    ```
+
+    ```sh
+    Dism /Online /Cleanup-Image /RestoreHealth
+    ```
+
+By following these steps, you should be able to repair the error code WAB-ERR-001. If the issue persists, consider seeking further assistance from a professional.
