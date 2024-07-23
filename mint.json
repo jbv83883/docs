@@ -18,9 +18,7 @@
   "modeToggle": {
     "default": "dark"
   },
-  "feedback": {
-    "thumbsRating": true
-  },
+
   "topbarLinks": [
     {
       "name": "Pricing",
