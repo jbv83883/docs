@@ -18,19 +18,13 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://discord.gg/mqCSPwv7bK"
     }
   ],
   "topbarCtaButton": {
     "name": "Customers",
     "url": "https://panel.superspoofer.lol"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Community",
