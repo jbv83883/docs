@@ -5,7 +5,7 @@
     "dark": "/logo/Logo.ico",
     "light": "/logo/Logo.ico"
   },
-  "favicon": "/logo/Logo.ico",
+  "favicon": "/logo/dark.svg",
   "colors": {
     "primary": "#0D0D10",
     "light": "#0782c9",
@@ -18,7 +18,9 @@
   "modeToggle": {
     "default": "dark"
   },
-
+  "feedback": {
+    "thumbsRating": true
+  },
   "topbarLinks": [
     {
       "name": "Pricing",
