@@ -49,17 +49,10 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
       "group": "Unban Tutorials",
       "pages": [
-        "methods/fivem"
+        "methods/fivem",
+        "methods/cod"
       ]
     },
     {
