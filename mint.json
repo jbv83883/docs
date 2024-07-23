@@ -53,10 +53,10 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Errors",
       "pages": [
-        "essentials/WAB-ERR-001",
-        "essentials/FLE-ERR-001"
+        "errors/WAB-ERR-001",
+        "errors/FLE-ERR-001"
       ]
     },
     {
