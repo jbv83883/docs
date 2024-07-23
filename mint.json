@@ -69,7 +69,8 @@
       "pages": [
         "guides/virtualization",
         "guides/security",
-        "guides/core"
+        "guides/core",
+        "guides/anticheats"
       ]
     },
     {
