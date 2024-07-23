@@ -34,12 +34,12 @@
   "anchors": [
     {
       "name": "Community",
-      "icon": "book-open-cover",
+      "icon": "discord",
       "url": "https://mintlify.com/docs"
     },
     {
       "name": "Official Store",
-      "icon": "slack",
+      "icon": "cart-circle-check",
       "url": "https://superspoofer.lol"
     }
   ],
