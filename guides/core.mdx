@@ -1,0 +1,75 @@
+---
+title: 'Disable Core Isolation'
+description: 'Core Isolation is a security feature in Windows 10 and Windows 11 that uses virtualization-based security to protect core processes from malicious software. However, you may need to disable Core Isolation for compatibility reasons with certain applications or drivers.'
+icon: 'map'
+---
+
+<Warning>
+Disabling Core Isolation can reduce the security of your system. Only disable it if absolutely necessary.
+</Warning>
+
+## Step 1: Open Windows Security
+
+1. **Open the Start Menu**
+    - Click the `Start` button or press the `Windows` key on your keyboard.
+
+2. **Search for Windows Security**
+    - Type `Windows Security` in the search bar and select the `Windows Security` app from the search results.
+
+## Step 2: Navigate to Device Security
+
+1. **Open Device Security**
+    - In the Windows Security app, click on `Device security` in the left-hand menu.
+
+2. **Core Isolation Details**
+    - Under the `Core isolation` section, click on `Core isolation details`.
+
+## Step 3: Disable Memory Integrity
+
+1. **Toggle Memory Integrity Off**
+    - In the Core isolation details window, you will see an option for `Memory integrity`. Toggle the switch to `Off`.
+
+<Note>
+You might need to restart your computer for the changes to take effect. Save any open work before proceeding.
+</Note>
+
+## Step 4: Restart Your Computer
+
+1. **Restart**
+    - Click the `Start` button, select the `Power` icon, and choose `Restart`.
+
+## Troubleshooting
+
+<Note>
+If the Memory integrity toggle is grayed out or you encounter issues disabling Core Isolation, you may need to take additional steps.
+</Note>
+
+### Verify Driver Compatibility
+
+1. **Check for Incompatible Drivers**
+    - Some drivers might prevent you from disabling Memory integrity. Check the list of incompatible drivers by running the following command in Command Prompt:
+
+    ```sh
+    sigverif
+    ```
+
+2. **Update or Remove Incompatible Drivers**
+    - Update the drivers from the manufacturer’s website or, if necessary, uninstall the incompatible drivers through Device Manager.
+
+### Edit Registry (Advanced)
+
+<Warning>
+Editing the registry can have serious consequences if not done correctly. Proceed with caution and consider backing up the registry first.
+</Warning>
+
+1. **Open Registry Editor**
+    - Press `Windows + R`, type `regedit`, and press `Enter`.
+
+2. **Navigate to the Core Isolation Key**
+    - Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity`.
+
+3. **Modify the Value**
+    - Double-click the `Enabled` entry and change its value to `0`.
+
+4. **Restart Your Computer**
+    - Restart your computer to apply the changes.
