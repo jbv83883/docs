@@ -1,0 +1,48 @@
+# Repair Error Code FLE-ERR-001
+
+## File Error 001: Could not get response from memory
+
+<Note>
+This issue can occur by accident. Please try and respoof first before attempting any fixes. If the issue persists, follow the steps below.
+</Note>
+
+## Step 1: Disable Antivirus
+🛡️ **Disable Antivirus**
+Temporarily disable your antivirus software to prevent it from interfering with the repair process.
+
+## Step 2: Install Visual C++ & .NET Framework
+
+1. **Install All Visual C++ Runtimes**
+    - Download the Visual C++ Redistributable Runtimes All-in-One from TechPowerUp.
+    - Open the zip file and run "Install All" as administrator.
+    - Allow all runtimes to install.
+
+    ![Visual C++ Redistributable Runtimes All-in-One (Apr 2022) Download](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
+
+2. **Install .NET Framework**
+    - Download and install the .NET Framework from the official Microsoft website.
+    - Restart your PC after installation.
+
+    ![Download .NET Framework | Free official downloads](https://dotnet.microsoft.com/download/dotnet-framework)
+
+## Step 3: Ensure C:\Windows\Temp Exists
+
+Make sure that `C:\Windows\Temp` exists and that you have access to it. Without access, .tmp files cannot be saved here.
+
+1. **Gain Access to C:\Windows\Temp**
+    - Open Command Prompt as Administrator.
+    - Run the following commands:
+
+    ```sh
+    takeown /f "C:\Windows\Temp"
+    ```
+
+    ```sh
+    cacls "C:\Windows\Temp" /E /G username:F
+    ```
+
+<Warning>
+Replace `username` with your actual Windows username in the command above.
+</Warning>
+
+By following these steps, you should be able to repair the error code FLE-ERR-001. If the issue persists, consider seeking further assistance from a professional.
