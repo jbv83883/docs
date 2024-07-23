@@ -69,10 +69,11 @@
     {
       "group": "Guides",
       "pages": [
-        "guides/virtualization",
-        "guides/security",
+        "guides/anticheats",
         "guides/core",
-        "guides/anticheats"
+        "guides/duplicate-spoofing",
+        "guides/security",
+        "guides/virtualization"
       ]
     },
     {
