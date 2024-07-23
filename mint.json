@@ -53,6 +53,12 @@
       ]
     },
     {
+      "group": "Unban Tutorials",
+      "pages": [
+        "methods/fivem.mdx"
+      ]
+    },
+    {
       "group": "Errors",
       "pages": [
         "errors/WAB-ERR-001",
