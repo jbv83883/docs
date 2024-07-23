@@ -1,0 +1,104 @@
+---
+title: 'XBX-ERR-001'
+description: 'Xbox Error 001 : Could not write to Windows hosts file'
+icon: 'circle-exclamation'
+---
+
+## Step 1: Check for the `hosts` File
+
+1. **Navigate to the `hosts` File Location**
+    - Open File Explorer.
+    - Go to `C:\Windows\System32\drivers\etc`.
+
+2. **Check for the `hosts` File**
+    - Ensure that the `hosts` file is present in the directory.
+    - If the file is missing or appears corrupted, proceed to the next steps.
+
+<Warning>
+Modifying the `hosts` file requires administrative privileges. Make sure you have the necessary permissions.
+</Warning>
+
+## Step 2: Restore the `hosts` File
+
+#### Method 1: Restore Default `hosts` File
+
+1. **Open Notepad as Administrator**
+    - Click the `Start` button or press the `Windows` key.
+    - Type `Notepad` in the search bar.
+    - Right-click on `Notepad` and select `Run as administrator`.
+
+2. **Create a Default `hosts` File**
+    - Copy and paste the following default content into Notepad:
+
+    ```plaintext
+    # Copyright (c) 1993-2009 Microsoft Corp.
+    #
+    # This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+    #
+    # This file contains the mappings of IP addresses to host names. Each
+    # entry should be kept on an individual line. The IP address should
+    # be placed in the first column followed by the corresponding host name.
+    # The IP address and the host name should be separated by at least one
+    # space.
+    #
+    # Additionally, comments (such as these) may be inserted on individual
+    # lines or following the machine name denoted by a '#' symbol.
+    #
+    # For example:
+    #
+    #      102.54.94.97     rhino.acme.com          # source server
+    #       38.25.63.10     x.acme.com              # x client host
+
+    # localhost name resolution is handled within DNS itself.
+    #       127.0.0.1       localhost
+    #       ::1             localhost
+    ```
+
+3. **Save the `hosts` File**
+    - Click `File` > `Save As`.
+    - Navigate to `C:\Windows\System32\drivers\etc`.
+    - In the `Save as type` dropdown, select `All Files`.
+    - Name the file `hosts` and click `Save`.
+
+#### Method 2: Restore Using Command Prompt
+
+1. **Open Command Prompt as Administrator**
+    - Click the `Start` button or press the `Windows` key.
+    - Type `cmd` in the search bar.
+    - Right-click on `Command Prompt` and select `Run as administrator`.
+
+2. **Restore the `hosts` File**
+    - Run the following command to restore the default `hosts` file:
+
+    ```sh
+    echo 127.0.0.1 localhost > C:\Windows\System32\drivers\etc\hosts
+    echo ::1 localhost >> C:\Windows\System32\drivers\etc\hosts
+    ```
+
+<Note>
+If you have custom entries in your `hosts` file, make sure to back them up before restoring the default file.
+</Note>
+
+## Step 3: Verify and Test
+
+1. **Verify the `hosts` File**
+    - Navigate to `C:\Windows\System32\drivers\etc` and open the `hosts` file in Notepad to verify its contents.
+
+2. **Test the Fix**
+    - Restart your computer.
+    - Check if the XBX-ERR-001 error is resolved.
+
+## Additional Troubleshooting
+
+If the issue persists after restoring the `hosts` file, consider the following additional steps:
+
+1. **Check File Permissions**
+    - Ensure that the `hosts` file has the correct permissions.
+    - Right-click on the `hosts` file, select `Properties`, and go to the `Security` tab.
+    - Ensure that your user account has full control.
+
+2. **Scan for Malware**
+    - Run a full system scan using your antivirus software to check for malware that might be corrupting the `hosts` file.
+
+3. **Update Windows**
+    - Ensure that your Windows operating system is up to date by checking for updates in `Settings` > `Update & Security` > `Windows Update`.
