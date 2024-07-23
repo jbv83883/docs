@@ -17,12 +17,16 @@
   },
   "topbarLinks": [
     {
+      "name": "Pricing",
+      "url": "https://superspoofer.lol"
+    },
+    {
       "name": "Support",
       "url": "https://discord.gg/mqCSPwv7bK"
     }
   ],
   "topbarCtaButton": {
-    "name": "Customers",
+    "name": "Customers Panel",
     "url": "https://panel.superspoofer.lol"
   },
   "anchors": [
