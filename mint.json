@@ -56,6 +56,7 @@
       "group": "Errors",
       "pages": [
         "errors/WAB-ERR-001",
+        "errors/SPF-ERR-001",
         "errors/FLE-ERR-001"
       ]
     },
