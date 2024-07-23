@@ -60,6 +60,7 @@
         "essentials/images",
         "essentials/settings",
         "essentials/navigation",
+        "essentials/FLE-ERR-001",
         "essentials/reusable-snippets"
       ]
     },
