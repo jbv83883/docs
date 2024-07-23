@@ -65,6 +65,12 @@
       ]
     },
     {
+      "group": "Guides",
+      "pages": [
+        "guides/virtualization"
+      ]
+    },
+    {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
