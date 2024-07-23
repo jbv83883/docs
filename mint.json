@@ -67,7 +67,9 @@
     {
       "group": "Guides",
       "pages": [
-        "guides/virtualization"
+        "guides/virtualization",
+        "guides/security",
+        "guides/core"
       ]
     },
     {
