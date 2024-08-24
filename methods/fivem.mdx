@@ -1,116 +1,244 @@
 ---
 title: 'FiveM Method'
-description: 'Last updated: 23rd July 2024'
+description: 'Last updated: 24th August 2024'
 icon: 'clipboard'
 ---
 
-<Warning>
-You must unlink your accounts, and change them every time you are banned, or if you fail to unban you are required to have new accounts again.
-</Warning>
+<Tabs>
+  <Tab title="Global & Hardware Bans">
 
-## Unlinking Accounts
+## Unlinking Accounts & Traces
+<Steps>
+  <Step title="Steam">
+    Open Steam, click your profile in the top right, then click change account. Then close steam, this will make sure you are logged out of your banned account.
+  </Step>
+  <Step title="Discord">
+    Open Discord, go to your settings and click on `Authorized Apps` search for "FiveM" and click deauthorise.
+    <Warning>
+      FiveM Will ask to reauthorise Discord when you load FiveM. Do not authorise Discord on a banned account.
+    </Warning>
+  </Step>
+  <Step title="CFX.re">
+    <Info>This step is only if you have a CFX account connected.</Info>
+    Head to https://forum.cfx.re/ login to your banned account, go to settings > Security and Deauthorise any devices connected.
+  </Step>
+  <Step title="Windows Local Account">
+    Go to your Windows settings > Accounts > Your info and switch to local account, this may vary due to Windows 10 / 11. It's best you use a youtube guide if you are confused.
+    
+    Windows 10: https://youtu.be/cdY1wVpwoVM<br/>
+    Windows 11: https://youtu.be/9ElHDJYzFMs
+  </Step>
+</Steps>
+  <Note>
+    Your accounts will be banned every time you load FiveM and are displayed with a FiveM ban message. If You get rebanned, or fail to unban you will need new accounts again.
+  </Note>
 
-### Steam
+## Remove Email & Accounts
+  <Steps>
+  <Step title="Navigate Email & Accounts">
+    Open Windows settings > `Accounts` > `Email & Accounts`
+  </Step>
+  <Step title="Remove Connected Emails">
+    For each email address you see, remove the email. Once completed restart your device.
+      <Info>
+    You must be on a local account before you can remove emails.
+  </Info>
+  </Step>
+</Steps>
 
-1. **Logout from Steam**
-    - Open Steam and log out of your current account.
-    - Alternatively, open Task Manager, search for "Steam", right-click, and select "End Task".
 
-2. **Disable Steam Startup (Optional)**
-    - Open Task Manager, go to the `Startup` tab.
-    - Right-click on Steam and click `Disable`.
+## Uninstall Xbox Application (RevoUninstaller)
 
-### Discord
-
-1. **Deauthorize Discord**
-    - Open Discord and go to `Settings` > `Authorized Apps`.
-    - Search for "FiveM" and select `Deauthorize`.
-
-<Warning>Do not reauthorize your Discord when FiveM asks you to. If needed, create an alt account and authorize it.</Warning>
-
-### Cfx.re
-
-1. **Deauthorize Cfx.re**
-    - Log in to the CFX forums with your main CFX account.
-    - Go to `Settings` > `Preferences` > `Apps` and click the `Deauthorize` button.
-
-### Windows Local Account
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/cdY1wVpwoVM"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
-
-### Remove Email & Accounts
-
-1. **Remove Accounts**
-    - Go to `Settings` > `Accounts` > `Email & accounts`.
-    - Remove any email addresses listed. You must switch to a Local account, then remove your emails & accounts.
-
-## Revo Uninstall Xbox
-
-<CardGroup cols={1}>
-  <Card
-    title="Download Revo Uninstaller Free"
-    icon="link"
-    href="https://www.revouninstaller.com/products/revo-uninstaller-free/"
-  >
-    Revo Uninstaller is the best way to uninstall Xbox applications due to it will remove left over traces.
+  <Steps>
+  <Step title="Install Revo Uninstaller Free">
+  <Card title="Revo Uninstaller" icon="link" href="https://www.revouninstaller.com/products/revo-uninstaller-free/" horizontal>
+    Download revo uninstaller free, to remove Xbox applications.
   </Card>
-</CardGroup>
+  </Step>
+  <Step title="Remove Connected Emails">
+     Open Revo Uninstaller with administrator privileges. Click on `Windows Apps` on the top bar. Find all applications that have `Xbox` in there name, right click and select `Uninstall` then continue with uninstallation. Click `Advanced Scan` and delete all left over files. (Select All > Delete)
 
-2. **Uninstall Xbox Apps**
-    - Open Revo Uninstaller with administrator privileges.
-    - Click on `Windows Apps` on the top bar.
-    - Scroll to the bottom and remove all apps with "Xbox" in their names.
-    - Right-click each Xbox app, click `Uninstall`, then `Continue`.
-    - After uninstalling, click `Scan` and delete all related registry items and files.
+    Video Guide: https://vimeo.com/956882971
 
-<Note>
-Follow [this video tutorial](https://vimeo.com/956882971) for more detailed instructions on uninstalling Xbox apps correctly.
-</Note>
+
+  </Step>
+</Steps>
 
 ## Spoofing with SuperSpoofer
 
-1. **Disable Antivirus**
-    - Disable all antivirus software to ensure the loader can complete all tasks.
+  <Steps>
+  <Step title="Disable Antivirus">
+   Search for `"Virus & Threat Protection"` and disable all options, this will make sure you do not get errors, or interfer with our process.
+   </Step>
+  <Step title="Download SuperSpoofer">
+      <Card title="Download Latest Version" icon="link" href="https://panel.superspoofer.lol" horizontal>
+    Download the latest version of SuperSpoofer from our customer panel.
+  </Card>
+  </Step>
+  <Step title="Spoof FiveM">
+    Login with your license, select SuperSpoofer then Spoof FiveM, once successfully spoofed you can continue with steps.
+  </Step>
+</Steps>
 
-2. **Run SuperLoader**
-    - Open SuperLoader, enter your license, and select "FiveM Spoofer".
-    - On the main menu, select `Open` on FiveM Spoofer.
-    - Select your ban type from the dropdown and click `Spoof`.
-    - Wait for the message "Successfully Spoofed".
 
-<Note>
-Licenses are available at [SuperSpoofer](https://superspoofer.lol). Download the latest version from our customer panel.
-</Note>
+## Launch FiveM
 
-## Login with Fresh Rockstar
+  <Steps>
+  <Step title="Launch FiveM">
+   If FiveM was uninstalled, reinstall FiveM and launch FiveM.
+   </Step>
+  <Step title="Use a New Rockstar Account">
+    FiveM will ask you yo login with a rockstar account. You must use a brand new, unused/unbanned account. If you create one it will not have a FiveM license. It is best you purchase a FiveM Ready account. (https://superspoofer.lol)
 
-1. **Use a New Rockstar Account**
-    - After spoofing and unlinking all other accounts, launch FiveM.
-    - When prompted to log in with a Rockstar account, use a brand new account not previously banned.
-    - New Rockstar accounts can be obtained from our site.
+  <Note>
+  You can use the same account when you restart the PC, as long as you have not been rebanned.
+  </Note>
+  </Step>
+</Steps>
 
-<Note>
-You can use the same account when you restart the PC, as long as you have not been rebanned.
-</Note>
 
-## Full Unban Tutorial - Video Method
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/gVXBwZHZN8Y"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+  ## Full Unban Tutorial - Video Method
+
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/gVXBwZHZN8Y"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    style={{ width: '100%', borderRadius: '0.5rem' }}
+  ></iframe>
+
+  </Tab>
+  <Tab title="Anticheat Bans (FiveGuard Etc)">
+## Unlinking Accounts & Traces
+<Steps>
+  <Step title="Steam">
+    Open Steam, click your profile in the top right, then click change account. Then close steam, this will make sure you are logged out of your banned account.
+  </Step>
+  <Step title="Discord">
+    Open Discord, go to your settings and click on `Authorized Apps` search for "FiveM" and click deauthorise.
+    <Warning>
+      FiveM Will ask to reauthorise Discord when you load FiveM. Do not authorise Discord on a banned account.
+    </Warning>
+  </Step>
+  <Step title="CFX.re">
+    <Info>This step is only if you have a CFX account connected.</Info>
+    Head to https://forum.cfx.re/ login to your banned account, go to settings > Security and Deauthorise any devices connected.
+  </Step>
+  <Step title="Windows Local Account">
+    Go to your Windows settings > Accounts > Your info and switch to local account, this may vary due to Windows 10 / 11. It's best you use a youtube guide if you are confused.
+    
+    Windows 10: https://youtu.be/cdY1wVpwoVM<br/>
+    Windows 11: https://youtu.be/9ElHDJYzFMs
+  </Step>
+</Steps>
+  <Note>
+    Your accounts will be banned every time you load FiveM and are displayed with a FiveM ban message. If You get rebanned, or fail to unban you will need new accounts again.
+  </Note>
+
+## Remove Email & Accounts
+  <Steps>
+  <Step title="Navigate Email & Accounts">
+    Open Windows settings > `Accounts` > `Email & Accounts`
+  </Step>
+  <Step title="Remove Connected Emails">
+    For each email address you see, remove the email. Once completed restart your device.
+      <Info>
+    You must be on a local account before you can remove emails.
+  </Info>
+  </Step>
+</Steps>
+
+
+## Uninstall Xbox Application (RevoUninstaller)
+
+  <Steps>
+  <Step title="Install Revo Uninstaller Free">
+  <Card title="Revo Uninstaller" icon="link" href="https://www.revouninstaller.com/products/revo-uninstaller-free/" horizontal>
+    Download revo uninstaller free, to remove Xbox applications.
+  </Card>
+  </Step>
+  <Step title="Remove Connected Emails">
+     Open Revo Uninstaller with administrator privileges. Click on `Windows Apps` on the top bar. Find all applications that have `Xbox` in there name, right click and select `Uninstall` then continue with uninstallation. Click `Advanced Scan` and delete all left over files. (Select All > Delete)
+
+    Video Guide: https://vimeo.com/956882971
+
+
+  </Step>
+</Steps>
+
+## Spoofing with SuperSpoofer
+
+  <Steps>
+  <Step title="Disable Antivirus">
+   Search for `"Virus & Threat Protection"` and disable all options, this will make sure you do not get errors, or interfer with our process.
+   </Step>
+  <Step title="Download SuperSpoofer">
+      <Card title="Download Latest Version" icon="link" href="https://panel.superspoofer.lol" horizontal>
+    Download the latest version of SuperSpoofer from our customer panel.
+  </Card>
+  </Step>
+  <Step title="Spoof FiveM">
+    Login with your license, select SuperSpoofer then Spoof FiveM, once successfully spoofed you can continue with steps.
+  </Step>
+</Steps>
+
+## Spoof Network
+  <Steps>
+  <Step title="Spoof MAC Address">
+   You need to spoof your MAC address with TMAC. You can download TMAC from https://technitium.com/tmac/
+
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/Kc7BabFYs7Q"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+
+   </Step>
+  <Step title="Use a VPN">
+    You should use a VPN to bypass AntiSpoof, or IP Bans. These are normally done from FiveGuard & FiniAC. You can find a free VPN or buy a cheap VPN such as mullmad/ipvanish.
+  </Step>
+</Steps>
+
+## Launch FiveM
+
+  <Steps>
+  <Step title="Launch FiveM">
+   If FiveM was uninstalled, reinstall FiveM and launch FiveM.
+   </Step>
+  <Step title="Use a New Rockstar Account">
+    FiveM will ask you yo login with a rockstar account. You must use a brand new, unused/unbanned account. If you create one it will not have a FiveM license. It is best you purchase a FiveM Ready account. (https://superspoofer.lol)
+
+  <Note>
+  You can use the same account when you restart the PC, as long as you have not been rebanned.
+  </Note>
+  </Step>
+</Steps>
+
+
+
+  ## Full Unban Tutorial - Video Method
+
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/gVXBwZHZN8Y"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    style={{ width: '100%', borderRadius: '0.5rem' }}
+  ></iframe>
+
+  </Tab>
+
+</Tabs>
+
+
