@@ -58,12 +58,8 @@
     {
       "group": "Errors",
       "pages": [
-        "errors/ATT-ERR-001",
-        "errors/DWN-ERR-001",
         "errors/FLE-ERR-001",
-        "errors/SPF-ERR-001",
-        "errors/WAB-ERR-001",
-        "errors/XBX-ERR-001"
+        "errors/SPF-ERR-001"
       ]
     },
     {
