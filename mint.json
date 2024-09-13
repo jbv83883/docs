@@ -56,6 +56,14 @@
       ]
     },
     {
+      "group": "Common Issues",
+      "pages": [
+        "Common Issues/This app can't run on your PC",
+        "errors/SPF-ERR-001"
+      ]
+    },
+
+    {
       "group": "Errors",
       "pages": [
         "errors/FLE-ERR-001",
