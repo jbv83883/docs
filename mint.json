@@ -56,18 +56,16 @@
       ]
     },
     {
-      "group": "Authentication Issues",
-      "pages": [
-        "authentication/hwid"
-      ]
-    },
-
-
-    {
       "group": "Loader Errors",
       "pages": [
         "errors/FLE-ERR-001",
         "errors/SPF-ERR-001"
+      ]
+    },
+    {
+      "group": "Authentication Issues",
+      "pages": [
+        "authentication/hwid"
       ]
     },
     {
