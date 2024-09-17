@@ -61,15 +61,10 @@
         "authentication/hwid"
       ]
     },
-    {
-      "group": "Common Issues",
-      "pages": [
-        "Common Issues/Can't Run On PC"
-      ]
-    },
+
 
     {
-      "group": "Errors",
+      "group": "Loader Errors",
       "pages": [
         "errors/FLE-ERR-001",
         "errors/SPF-ERR-001"
