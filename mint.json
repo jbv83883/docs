@@ -56,6 +56,12 @@
       ]
     },
     {
+      "group": "Authentication Issues",
+      "pages": [
+        "authentication/hwid"
+      ]
+    },
+    {
       "group": "Common Issues",
       "pages": [
         "Common Issues/Can't Run On PC"
