@@ -58,8 +58,7 @@
     {
       "group": "Loader Errors",
       "pages": [
-        "errors/FLE-ERR-001",
-        "errors/SPF-ERR-001"
+        "codes/0x8BADF00D"
       ]
     },
     {
