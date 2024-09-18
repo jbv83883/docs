@@ -72,8 +72,8 @@
       "group": "Common Issues",
       "pages": [
         "issues/bluescreen",
-        "issues/0x000007b",
-        "issues/network"
+        "issues/network",
+        "issues/0x000007b"
       ]
     },
 
