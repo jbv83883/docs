@@ -82,6 +82,7 @@
         "guides/anticheats",
         "guides/core",
         "guides/security",
+        "guides/framework",
         "guides/virtualization"
       ]
     },
