@@ -3,3 +3,67 @@ title: 'Windows 0x000007b'
 description: '0x000007b Is a error code that is thrown from the PC Check Bypass tool.'
 icon: 'windows'
 ---
+
+### Reinstall Microsoft Visual C++ Redistributable Packages
+<Steps>
+  <Step title="Download Official Versions">
+    - Go to the official Microsoft download page (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) for the Visual C++ Redistributables.
+    - Download and install all available versions for your system:
+2015, 2017, and 2019 versions for both `x86 (32-bit)` and `x64 (64-bit)`
+  </Step>
+  <Step title="Restart Device">
+    - After installation, restart your computer and try running the program again.
+  </Step>
+</Steps>
+
+### Reinstall .NET Framework
+<Steps>
+  <Step title="Open Windows Features">
+    - Press Windows + R, type optionalfeatures, and hit Enter.
+  </Step>
+  <Step title="Enable .NET Features">
+    - In the Windows Features dialog, check .NET Framework 3.5 (includes .NET 2.0 and 3.0) and .NET Framework 4.8 Advanced Services.
+    - If they are already enabled, disable them, reboot, then re-enable and reboot again. If not already installed, download the latest version of the .NET Framework (https://dotnet.microsoft.com/en-us/download/dotnet-framework) from the Microsoft website.
+  </Step>
+</Steps>
+
+### Update or Reinstall Graphics Drivers
+<Steps>
+  <Step title="Open Device Manager">
+    - Right-click the Start button and choose Device Manager.
+    - Expand the Display adapters section.
+  </Step>
+  <Step title="Update Drivers">
+    - Right-click your graphics card and select Update driver.
+    - Choose Search automatically for drivers and allow Windows to install any available updates.
+  </Step>
+</Steps>
+
+### Repair Windows Via CMD
+<Steps>
+  <Step title="Check Disk Errors">
+    - Open Command Prompt as Administrator.
+    - Run the following command to scan and repair your system files:
+    ```batch DISK.bat
+    chkdsk C: /f /r
+    ```
+
+  </Step>
+  <Step title="Perform SFC Scan">
+    - Open Command Prompt as Administrator.
+    - Run the following command to scan and wait until it is completed to see if any files are corrupted:
+    ```batch SFC.bat
+    sfc /scannow
+    ```
+  </Step>
+
+  <Step title="Perform DISM Checks">
+    - Open Command Prompt as Administrator.
+    - Run the following commands, one by one to scan and repair your system files:
+    ```batch DISM.bat
+      DISM /Online /Cleanup-Image /CheckHealth
+      DISM /Online /Cleanup-Image /ScanHealth
+      DISM /Online /Cleanup-Image /RestoreHealth
+    ```
+  </Step>
+</Steps>
