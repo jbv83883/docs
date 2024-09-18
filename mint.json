@@ -67,12 +67,7 @@
         "codes/0xV1RTU93D"
       ]
     },
-    {
-      "group": "Authentication Issues",
-      "pages": [
-        "authentication/hwid"
-      ]
-    },
+
     {
       "group": "Guides",
       "pages": [
