@@ -69,6 +69,14 @@
     },
 
     {
+      "group": "Common Issues",
+      "pages": [
+        "issues/bluescreen",
+        "issues/network"
+      ]
+    },
+
+    {
       "group": "Guides",
       "pages": [
         "guides/anticheats",
