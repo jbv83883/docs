@@ -87,6 +87,14 @@
         "guides/virtualization"
       ]
     },
+
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/checker"
+      ]
+    },
+  
     {
       "group": "More",
       "pages": [
