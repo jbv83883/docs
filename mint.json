@@ -59,13 +59,7 @@
     {
       "group": "Loader Errors",
       "pages": [
-        "codes/0x0LDW1ND0",
-        "codes/0x2SP00F3R",
-        "codes/0x5P00F1D3",
-        "codes/0x8BADF00D",
-        "codes/0xB4DDRIVR",
-        "codes/0xDEADC0DE",
-        "codes/0xV1RTU93D"
+        "codes/0x0LDW1ND0"
       ]
     },
 
@@ -81,7 +75,6 @@
     {
       "group": "Guides",
       "pages": [
-        "guides/anticheats",
         "guides/core",
         "guides/security",
         "guides/framework",
@@ -92,7 +85,6 @@
     {
       "group": "Resources",
       "pages": [
-        "resources/checker",
         "resources/debugger"
       ]
     },
